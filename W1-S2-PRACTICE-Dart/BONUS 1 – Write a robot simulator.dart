@@ -7,11 +7,11 @@ void main() {
   Direction direction = Direction.north;
 
   // Example instruction sequence
-  const instructions = "AARAARALA";
+  const instructions = "AARRA";
 
   // Print start position and instructions
   print("Start position: {$x, $y}");
-  print("Initial direction: ${direction.toString().split('.').last}");
+  print("Default direction: ${direction.toString().split('.').last}");
   print("Instructions: $instructions");
   print(""); // Empty line for better readability
 
