@@ -1,21 +1,20 @@
 enum Direction { north, east, south, west }
 
 void main() {
-  // Initial position {4, 1} and facing north
+
   int x = 4;
   int y = 1;
   Direction direction = Direction.north;
 
-  // Example instruction sequence
-  const instructions = "AARRA";
 
-  // Print start position and instructions
+  const instructions = "AARAARALA";
+
+
   print("Start position: {$x, $y}");
   print("Default direction: ${direction.toString().split('.').last}");
-  print("Instructions: $instructions");
-  print(""); // Empty line for better readability
+  print("Instructions: $instructions");// Empty line for better readability
 
-  // Process the instructions and get the final position and direction
+  // Process the instructions
   for (var instruction in instructions.split('')) {
     switch (instruction) {
       case 'R':
@@ -32,7 +31,7 @@ void main() {
     }
   }
 
-  // Print the final position and direction
+
   print("Final position: {$x, $y}");
   print("Facing: ${direction.toString().split('.').last}");
 }
