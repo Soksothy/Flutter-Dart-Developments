@@ -10,8 +10,8 @@ void main() {
   const instructions = "AARAARALA";
 
 
-  print("Start position: {$x, $y}");
-  print("Default direction: ${direction.toString().split('.').last}");
+  print("Start : {$x, $y}");
+  print("Give Direction: ${direction.toString().split('.').last}");
   print("Instructions: $instructions");// Empty line for better readability
 
   // Process the instructions

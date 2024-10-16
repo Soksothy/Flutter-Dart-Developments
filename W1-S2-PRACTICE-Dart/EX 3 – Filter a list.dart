@@ -4,4 +4,5 @@ void main (List<String> arg){
  List<int> pass_scores = score.where((score) => score >= 50).toList();
 
  print('${pass_scores.length} is passed');
+
 }
