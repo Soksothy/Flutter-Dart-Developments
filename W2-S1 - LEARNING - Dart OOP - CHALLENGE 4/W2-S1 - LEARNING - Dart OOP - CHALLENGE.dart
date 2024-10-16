@@ -1,8 +1,8 @@
 class Distance {
   final double _m;
-  final String _distance_unit;
+  final String _distanceUnit;
 
-  const Distance._(this._m, this._distance_unit);
+  const Distance._(this._m, this._distanceUnit);
 
   Distance.cm(double cm) : this._(cm / 100, 'cm');
   Distance.m(double m) : this._(m, 'm');
@@ -22,7 +22,7 @@ class Distance {
 
   @override
   String toString() {
-    switch (_distance_unit) {
+    switch (_distanceUnit) {
       case 'cm':
         return '|${cm.toStringAsFixed(2)} cm|';
       case 'm':
