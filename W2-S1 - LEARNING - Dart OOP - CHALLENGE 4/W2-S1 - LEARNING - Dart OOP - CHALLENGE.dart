@@ -37,8 +37,9 @@ class Distance {
 
 void main() {
   Distance d1 = Distance.m(10);
-  Distance d2 = Distance.km(2);
-
+  // print(d1.inCm);
+  Distance d2 = Distance.cm(200);
+  // print(d2.inM);
   print('d1:$d1 + d2:$d2 = ${d1 + d2} In Cm: ${(d1 + d2).inCm} In Km: ${(d1 + d2).inKm}');
 
 }
