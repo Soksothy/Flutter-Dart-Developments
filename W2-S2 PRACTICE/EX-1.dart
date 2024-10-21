@@ -17,7 +17,7 @@ class Employee {
 
   Employee(this._name, this._baseSalary, this._skills, this._address, this._yearsOfExperience);
 
-  // Named constructor for mobile developer
+
   Employee.mobileDeveloper(String name, Address address, int yearsOfExperience)
       : _name = name,
         _baseSalary = 40000,
@@ -25,7 +25,7 @@ class Employee {
         _address = address,
         _yearsOfExperience = yearsOfExperience;
 
-  // Getter methods
+
   String get name => _name;
   double get baseSalary => _baseSalary;
   List<Skill> get skills => List.unmodifiable(_skills);
