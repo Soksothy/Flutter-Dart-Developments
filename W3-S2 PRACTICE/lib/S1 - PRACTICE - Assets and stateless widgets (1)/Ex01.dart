@@ -18,7 +18,7 @@ class HobbyCard extends StatelessWidget {
       padding: EdgeInsets.all(16.0),
       decoration: BoxDecoration(
         color: color.withOpacity(0.5),
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(20),
         boxShadow: const [
           BoxShadow(
             color: Colors.black12,
@@ -30,7 +30,7 @@ class HobbyCard extends StatelessWidget {
       child: Row(
         children: [
           Icon(icon, size: 36, color: color),
-          SizedBox(width: 16),
+          const SizedBox(width: 16),
           Expanded(
             child: Text(
               title,
