@@ -65,17 +65,20 @@ class MyApp extends StatelessWidget {
                   label: 'Primary Button',
                   icon: Icons.check,
                   buttonType: ButtonType.primary,
+                  iconPosition: IconPosition.left ,
                 ),
                 SizedBox(height: 20), // Add space between buttons
                 CustomButton(
                   label: 'Secondary Button',
                   icon: Icons.check_circle,
+                  iconPosition: IconPosition.right ,
                   buttonType: ButtonType.secondary,
                 ),
                 SizedBox(height: 20), // Add space between buttons
                 CustomButton(
                   label: 'Disabled Button',
                   icon: Icons.block,
+                  iconPosition: IconPosition.right ,
                   buttonType: ButtonType.disabled,
                 ),
               ],
