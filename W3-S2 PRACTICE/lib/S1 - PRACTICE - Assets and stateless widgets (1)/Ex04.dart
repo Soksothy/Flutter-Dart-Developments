@@ -15,21 +15,31 @@ class WeatherForecast extends StatelessWidget {
 
   Color _getConditionColor() {
     switch (condition) {
-      case 'Sunny': return Colors.orange;
-      case 'Rainy': return Colors.blueGrey;
-      case 'Cloudy': return Colors.lightBlue;
-      case 'Snowy': return Colors.green;
-      default: return Colors.blueAccent;
+      case 'Sunny':
+        return Colors.orange;
+      case 'Rainy':
+        return Colors.blueGrey;
+      case 'Cloudy':
+        return Colors.lightBlue;
+      case 'Snowy':
+        return Colors.green;
+      default:
+        return Colors.blueAccent;
     }
   }
 
   IconData _getConditionIcon() {
     switch (condition) {
-      case 'Sunny': return Icons.wb_sunny;
-      case 'Rainy': return Icons.grain;
-      case 'Cloudy': return Icons.cloud;
-      case 'Snowy': return Icons.ac_unit;
-      default: return Icons.wb_sunny;
+      case 'Sunny':
+        return Icons.wb_sunny;
+      case 'Rainy':
+        return Icons.grain;
+      case 'Cloudy':
+        return Icons.cloud;
+      case 'Snowy':
+        return Icons.ac_unit;
+      default:
+        return Icons.wb_sunny;
     }
   }
 
@@ -38,7 +48,8 @@ class WeatherForecast extends StatelessWidget {
     return Card(
       margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-      color: _getConditionColor(), // Changed to solid color for better visibility
+      color:
+          _getConditionColor(), // Changed to solid color for better visibility
       child: Padding(
         padding: EdgeInsets.all(16.0),
         child: Row(
@@ -49,9 +60,15 @@ class WeatherForecast extends StatelessWidget {
               children: [
                 Text(
                   dayOfWeek,
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white), // Change text color to white for contrast
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors
+                          .white), // Change text color to white for contrast
                 ),
-                Icon(_getConditionIcon(), color: Colors.white, size: 40), // Changed icon color to white
+                Icon(_getConditionIcon(),
+                    color: Colors.white,
+                    size: 40), // Changed icon color to white
               ],
             ),
             Column(
@@ -59,11 +76,18 @@ class WeatherForecast extends StatelessWidget {
               children: [
                 Text(
                   '$temperatureMin°C - $temperatureMax°C',
-                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.w600, color: Colors.white), // Change text color to white for contrast
+                  style: TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.w600,
+                      color: Colors
+                          .white), // Change text color to white for contrast
                 ),
                 Text(
                   condition,
-                  style: TextStyle(fontSize: 18, color: Colors.white), // Change text color to white for contrast
+                  style: TextStyle(
+                      fontSize: 18,
+                      color: Colors
+                          .white), // Change text color to white for contrast
                 ),
               ],
             ),

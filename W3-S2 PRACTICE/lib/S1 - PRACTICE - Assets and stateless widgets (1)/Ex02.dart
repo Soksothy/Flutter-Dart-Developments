@@ -29,7 +29,8 @@ class ProductCard extends StatelessWidget {
           ClipRRect(
             borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
             child: ConstrainedBox(
-              constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.25),
+              constraints: BoxConstraints(
+                  maxHeight: MediaQuery.of(context).size.height * 0.25),
               child: Image.asset(
                 product.imagePath,
                 fit: BoxFit.cover,
@@ -44,7 +45,8 @@ class ProductCard extends StatelessWidget {
               children: [
                 Text(
                   product.title,
-                  style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: const TextStyle(
+                      fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 4),
                 Text(

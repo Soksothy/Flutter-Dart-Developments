@@ -37,18 +37,17 @@ class _ScoreCardState extends State<ScoreCard> {
 
   void _increment() {
     setState(() {
-      _score += 0.1; 
+      _score += 0.1;
       if (_score > 1.0) _score = 1.0;
     });
   }
 
   void _decrement() {
     setState(() {
-      _score -= 0.1; 
-      if (_score < 0.0) _score = 0.0; 
+      _score -= 0.1;
+      if (_score < 0.0) _score = 0.0;
     });
   }
-
 
   @override
   Widget build(BuildContext context) {

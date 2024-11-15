@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 enum ButtonType { primary, secondary, disabled }
+
 enum IconPosition { left, right }
 
 class CustomButton extends StatelessWidget {
@@ -33,13 +34,16 @@ class CustomButton extends StatelessWidget {
     }
 
     return ElevatedButton.icon(
-      icon: iconPosition == IconPosition.left ? Icon(icon) : const SizedBox.shrink(),
+      icon: iconPosition == IconPosition.left
+          ? Icon(icon)
+          : const SizedBox.shrink(),
       label: Text(label),
       style: ElevatedButton.styleFrom(
         backgroundColor: buttonColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
-        minimumSize: Size(double.infinity, 50), // Make button full width with a fixed height
+        minimumSize: Size(
+            double.infinity, 50), // Make button full width with a fixed height
       ),
       onPressed: buttonType == ButtonType.disabled ? null : () {},
     );
@@ -56,8 +60,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Custom Buttons')),
-        body: const Center( // Center the column in the body
-          child: SingleChildScrollView( // Allow scrolling if the buttons exceed screen height
+        body: const Center(
+          // Center the column in the body
+          child: SingleChildScrollView(
+            // Allow scrolling if the buttons exceed screen height
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -65,20 +71,20 @@ class MyApp extends StatelessWidget {
                   label: 'Primary Button',
                   icon: Icons.check,
                   buttonType: ButtonType.primary,
-                  iconPosition: IconPosition.left ,
+                  iconPosition: IconPosition.left,
                 ),
                 SizedBox(height: 20), // Add space between buttons
                 CustomButton(
                   label: 'Secondary Button',
                   icon: Icons.check_circle,
-                  iconPosition: IconPosition.right ,
+                  iconPosition: IconPosition.right,
                   buttonType: ButtonType.secondary,
                 ),
                 SizedBox(height: 20), // Add space between buttons
                 CustomButton(
                   label: 'Disabled Button',
                   icon: Icons.block,
-                  iconPosition: IconPosition.right ,
+                  iconPosition: IconPosition.right,
                   buttonType: ButtonType.disabled,
                 ),
               ],

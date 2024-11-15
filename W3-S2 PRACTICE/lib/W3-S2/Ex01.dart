@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
           child: Text(
             'Hello my name is Sothy',
             style: TextStyle(
-              fontSize: 30,            // Set font size
-              fontWeight: FontWeight.bold,  // Set font weight
-              color: Colors.orange,       // Set text color
+              fontSize: 30, // Set font size
+              fontWeight: FontWeight.bold, // Set font weight
+              color: Colors.orange, // Set text color
             ),
           ),
         ),

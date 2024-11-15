@@ -29,7 +29,8 @@ class MyHomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Container(
-              margin: const EdgeInsets.symmetric(horizontal: 20), // Add horizontal margin
+              margin: const EdgeInsets.symmetric(
+                  horizontal: 20), // Add horizontal margin
               width: double.infinity,
               height: 50,
               decoration: BoxDecoration(
@@ -47,7 +48,8 @@ class MyHomePage extends StatelessWidget {
             ),
             const SizedBox(height: 30), // Adjust spacing between containers
             Container(
-              margin: const EdgeInsets.symmetric(horizontal: 20), // Add horizontal margin
+              margin: const EdgeInsets.symmetric(
+                  horizontal: 20), // Add horizontal margin
               width: double.infinity,
               height: 50,
               decoration: BoxDecoration(
@@ -63,7 +65,8 @@ class MyHomePage extends StatelessWidget {
             ),
             const SizedBox(height: 30), // Adjust spacing between containers
             Container(
-              margin: const EdgeInsets.symmetric(horizontal: 20), // Add horizontal margin
+              margin: const EdgeInsets.symmetric(
+                  horizontal: 20), // Add horizontal margin
               width: double.infinity,
               height: 50,
               decoration: BoxDecoration(
@@ -75,7 +78,10 @@ class MyHomePage extends StatelessWidget {
               child: const Center(
                 child: Text(
                   'FLUTTER',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
               ),
             ),

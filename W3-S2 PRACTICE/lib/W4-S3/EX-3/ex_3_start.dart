@@ -9,7 +9,7 @@ List<String> images = [
 ];
 
 void main() => runApp(MaterialApp(
-      debugShowCheckedModeBanner: false, 
+      debugShowCheckedModeBanner: false,
       home: ImageGallery(),
     ));
 
@@ -34,7 +34,7 @@ class _ImageGalleryState extends State<ImageGallery> {
   }
 
   @override
-  Widget build(BuildContext context) {         
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green[400],

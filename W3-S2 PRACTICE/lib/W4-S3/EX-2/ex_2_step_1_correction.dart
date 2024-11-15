@@ -9,7 +9,6 @@ void main() => runApp(MaterialApp(
         ),
         body: Column(
           children: [
-            
             Container(
               decoration: const BoxDecoration(
                 border: Border(
@@ -45,8 +44,6 @@ void main() => runApp(MaterialApp(
                 ],
               ),
             ),
-            
-            
             Container(
               decoration: const BoxDecoration(
                 border: Border(
@@ -82,8 +79,6 @@ void main() => runApp(MaterialApp(
                 ],
               ),
             ),
-            
-            
             Container(
               decoration: const BoxDecoration(
                 border: Border(
@@ -119,8 +114,6 @@ void main() => runApp(MaterialApp(
                 ],
               ),
             ),
-            
-            
             Container(
               decoration: const BoxDecoration(
                 border: Border(
