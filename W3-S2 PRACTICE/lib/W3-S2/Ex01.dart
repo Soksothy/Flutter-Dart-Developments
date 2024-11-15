@@ -9,19 +9,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('My App'),
-          backgroundColor: Colors.teal,
-        ),
-        body: const Center(
+        body: Center(
           child: Text(
-            'Hello, Flutter!',
+            'Hello my name is Sothy',
             style: TextStyle(
-              fontSize: 24,            // Set font size
+              fontSize: 30,            // Set font size
               fontWeight: FontWeight.bold,  // Set font weight
-              color: Colors.blueGrey,       // Set text color
+              color: Colors.orange,       // Set text color
             ),
           ),
         ),

@@ -7,7 +7,7 @@ void main() => runApp(MaterialApp(
           backgroundColor: Colors.blue,
           title: const Text("Favorite cards"),
         ),
-        body: Column(
+        body: const Column(
           children: [
             FavoriteCard(title: "Title 1", description: "description 1"),
             FavoriteCard(title: "Title 2", description: "description 2"),
@@ -54,7 +54,7 @@ class _FavoriteCardState extends State<FavoriteCard> {
             children: [
               Text(
                 widget.title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 18,
                   color: Colors.blue,
                   fontWeight: FontWeight.bold,
@@ -63,7 +63,7 @@ class _FavoriteCardState extends State<FavoriteCard> {
               SizedBox(height: 4),
               Text(
                 widget.description,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 14,
                   color: Colors.grey,
                 ),
