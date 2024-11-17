@@ -66,7 +66,10 @@ flutter:
     - assets/w4-s2/man.jpg
     - assets/dart.png
     - assets/flutter.png
+    - assets/w4-s2/amine.jpg
     - assets/firebase.png
+    - assets/background.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
