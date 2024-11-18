@@ -7,10 +7,17 @@ class Joke {
   Joke({required this.title, required this.description, this.isFavorite = false});
 }
 
-List<Joke> jokes = List.generate(
-  20,
-  (index) => Joke(
-    title: 'Joke Title $index',
-    description: 'This is the description of joke $index.',
+List<Joke> jokes = [
+  Joke(
+    title: 'Girls Joke',
+    description: 'Girl is the sweet poison.',
   ),
-);
+  Joke(
+    title: 'Life Joke',
+    description: 'It always seems impossible until it done.',
+  ),
+  Joke(
+    title: 'Love Joke',
+    description: 'People can`t spell love without hurt.',
+  ),
+];
