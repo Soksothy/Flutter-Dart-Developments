@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class Welcome extends StatelessWidget {
   final VoidCallback onStart;
 
-
   const Welcome({super.key, required this.onStart});
 
   @override
