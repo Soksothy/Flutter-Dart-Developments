@@ -5,7 +5,7 @@ class HobbyCard extends StatelessWidget {
   final IconData icon;
   final Color color;
 
-  HobbyCard({
+  const HobbyCard({super.key, 
     required this.title,
     required this.icon,
     this.color = Colors.blue,
@@ -14,8 +14,8 @@ class HobbyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
-      padding: EdgeInsets.all(16.0),
+      margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+      padding: const EdgeInsets.all(16.0),
       decoration: BoxDecoration(
         color: color.withOpacity(0.5),
         borderRadius: BorderRadius.circular(20),
@@ -52,11 +52,13 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('Hobby Cards')),
+        appBar: AppBar(title: const Text('Hobby Cards')),
         body: Column(
           children: [
             HobbyCard(

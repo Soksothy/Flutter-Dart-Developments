@@ -6,7 +6,7 @@ class WeatherForecast extends StatelessWidget {
   final int temperatureMax;
   final String dayOfWeek;
 
-  WeatherForecast({
+  const WeatherForecast({super.key, 
     required this.condition,
     required this.temperatureMin,
     required this.temperatureMax,
@@ -46,12 +46,12 @@ class WeatherForecast extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+      margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       color:
           _getConditionColor(), // Changed to solid color for better visibility
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -60,7 +60,7 @@ class WeatherForecast extends StatelessWidget {
               children: [
                 Text(
                   dayOfWeek,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors
@@ -76,7 +76,7 @@ class WeatherForecast extends StatelessWidget {
               children: [
                 Text(
                   '$temperatureMin°C - $temperatureMax°C',
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.w600,
                       color: Colors
@@ -84,7 +84,7 @@ class WeatherForecast extends StatelessWidget {
                 ),
                 Text(
                   condition,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 18,
                       color: Colors
                           .white), // Change text color to white for contrast
@@ -103,6 +103,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -115,7 +117,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text('Weather Forecast')),
+        appBar: AppBar(title: const Text('Weather Forecast')),
         body: ListView(
           children: [
             WeatherForecast(

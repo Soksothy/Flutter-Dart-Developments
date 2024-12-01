@@ -42,7 +42,7 @@ class CustomButton extends StatelessWidget {
         backgroundColor: buttonColor,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 20),
-        minimumSize: Size(
+        minimumSize: const Size(
             double.infinity, 50), // Make button full width with a fixed height
       ),
       onPressed: buttonType == ButtonType.disabled ? null : () {},
@@ -55,6 +55,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
