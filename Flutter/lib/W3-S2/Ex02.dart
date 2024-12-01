@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
                 color: Colors.blue,
                 borderRadius: BorderRadius.all(Radius.circular(16.0)),
               ),
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: const Center(
                 child: Text(
                   'CADT STUDENTS',

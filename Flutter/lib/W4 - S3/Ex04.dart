@@ -10,7 +10,7 @@ class ScoreCard {
 class ScoreCardWidget extends StatefulWidget {
   final ScoreCard data;
 
-  const ScoreCardWidget({Key? key, required this.data}) : super(key: key);
+  const ScoreCardWidget({super.key, required this.data});
 
   @override
   _ScoreCardWidgetState createState() => _ScoreCardWidgetState();
@@ -50,8 +50,8 @@ class _ScoreCardWidgetState extends State<ScoreCardWidget> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(widget.data.title, style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-            SizedBox(height: 16.0),
+            Text(widget.data.title, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+            const SizedBox(height: 16.0),
             Stack(
               children: [
                 Container(
@@ -63,7 +63,7 @@ class _ScoreCardWidgetState extends State<ScoreCardWidget> {
                   ),
                 ),
                 AnimatedContainer(
-                  duration: Duration(milliseconds: 300),
+                  duration: const Duration(milliseconds: 300),
                   height: 40,
                   width: MediaQuery.of(context).size.width * (widget.data.score / 10),
                   decoration: BoxDecoration(
@@ -73,27 +73,27 @@ class _ScoreCardWidgetState extends State<ScoreCardWidget> {
                 ),
               ],
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 ElevatedButton(
                   onPressed: _decreaseScore,
                   style: ElevatedButton.styleFrom(
-                    shape: CircleBorder(),
-                    padding: EdgeInsets.all(16),
+                    shape: const CircleBorder(),
+                    padding: const EdgeInsets.all(16),
                     backgroundColor: Colors.red,
                   ),
-                  child: Icon(Icons.remove, color: Colors.white),
+                  child: const Icon(Icons.remove, color: Colors.white),
                 ),
                 ElevatedButton(
                   onPressed: _increaseScore,
                   style: ElevatedButton.styleFrom(
-                    shape: CircleBorder(),
-                    padding: EdgeInsets.all(16),
+                    shape: const CircleBorder(),
+                    padding: const EdgeInsets.all(16),
                     backgroundColor: Colors.green,
                   ),
-                  child: Icon(Icons.add, color: Colors.white),
+                  child: const Icon(Icons.add, color: Colors.white),
                 ),
               ],
             ),
@@ -107,6 +107,8 @@ class _ScoreCardWidgetState extends State<ScoreCardWidget> {
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -127,11 +129,13 @@ class ScoreBoard extends StatelessWidget {
     ScoreCard(title: 'My score in React', score: 5),
   ];
 
+   ScoreBoard({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Score Board'),
+        title: const Text('Score Board'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),

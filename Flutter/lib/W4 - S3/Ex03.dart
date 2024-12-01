@@ -10,6 +10,8 @@ List<String> images = [
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
 }
 
 class ImageGallery extends StatefulWidget {
+  const ImageGallery({super.key});
+
   @override
   _ImageGalleryState createState() => _ImageGalleryState();
 }

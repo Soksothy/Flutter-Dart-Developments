@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,6 +12,8 @@ class MyApp extends StatelessWidget {
 }
 
 class CounterPage extends StatefulWidget {
+  const CounterPage({super.key});
+
   @override
   _CounterPageState createState() => _CounterPageState();
 }
@@ -28,13 +30,13 @@ class _CounterPageState extends State<CounterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Counter Test')),
+      appBar: AppBar(title: const Text('Counter Test')),
       body: Center(
-        child: Text('$_counter', style: TextStyle(fontSize: 24)),
+        child: Text('$_counter', style: const TextStyle(fontSize: 24)),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }

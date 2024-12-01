@@ -59,11 +59,11 @@ class MyHomePage extends StatelessWidget {
           children: [
             CustomCard(text: 'OOP', color: Colors.blue[300]),
             const SizedBox(height: 30),
-            CustomCard(text: 'DART', color: Colors.blue),
+            const CustomCard(text: 'DART', color: Colors.blue),
             const SizedBox(height: 30),
-            CustomCard(
+            const CustomCard(
               text: 'FLUTTER',
-              gradient: const LinearGradient(
+              gradient: LinearGradient(
                 colors: [Colors.blue, Colors.blueAccent],
               ),
             ),
