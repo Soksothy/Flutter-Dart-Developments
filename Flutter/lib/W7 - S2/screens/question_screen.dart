@@ -19,8 +19,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue, 
-      body: Center(
+      backgroundColor: Colors.blue,       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

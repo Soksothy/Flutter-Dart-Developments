@@ -104,7 +104,7 @@ class _ScoreCardWidgetState extends State<ScoreCardWidget> {
   }
 }
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

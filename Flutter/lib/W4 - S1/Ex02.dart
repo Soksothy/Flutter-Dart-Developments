@@ -75,7 +75,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text('Product Cards')),
         body: ListView(
-          children: [
+          children: const [
             ProductCard(product: Product.dart),
             ProductCard(product: Product.flutter),
             ProductCard(product: Product.firebase),
